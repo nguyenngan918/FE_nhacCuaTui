@@ -18,18 +18,25 @@ body {
     cursor: pointer; }
 
 header#header {
-  padding: 6px 0 7px 0;
   border-bottom: #dadada solid 1px;
-  background-color: #ffffff; }
-  header#header .list-menu ul.flex {
-    align-items: center; }
+  background-color: #ffffff;
+  padding: 6px 0 7px 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 999999; }
+  header#header .list-menu {
+    padding-top: 5px; }
     header#header .list-menu ul.flex li.logo {
-      padding: 10px 18px 0px 0px; }
-      header#header .list-menu ul.flex li.logo img {
-        max-width: 100%;
+      width: 82px;
+      height: 46px; }
+      header#header .list-menu ul.flex li.logo a {
+        margin: 6px 18px 0 0;
         height: 100%; }
+        header#header .list-menu ul.flex li.logo a img {
+          max-width: 100%; }
     header#header .list-menu ul.flex li {
-      margin-right: 20px;
+      padding: 1px 16px 0 0;
       position: relative;
       text-transform: capitalize; }
       header#header .list-menu ul.flex li a {
