@@ -25,4 +25,13 @@ $(document).ready(function (){
       e.preventDefault();
       $('.banner-promotion').hide();
     })
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      // loop: true,
+      nav: false,
+      autoplay: true,
+      // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+      animateIn:'fadeInLeft',
+      animateOut:'slideOutDown'
+  });
 });

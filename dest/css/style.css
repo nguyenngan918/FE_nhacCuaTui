@@ -111,10 +111,45 @@ header#header {
 
 .main-left {
   padding: 0px 0;
-  width: 72%; }
+  flex-basis: 72%; }
 
 .main-right {
-  width: 300px; }
+  flex-basis: 25%;
+  overflow: hidden; }
+  .main-right .owl-dots {
+    display: flex;
+    justify-content: flex-end; }
+    .main-right .owl-dots .owl-dot {
+      width: 15px;
+      height: 15px;
+      border: 1px solid darkgray !important;
+      border-radius: 50%;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer; }
+      .main-right .owl-dots .owl-dot:hover::after {
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%) scale(0.5);
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        background-color: #2582be !important; }
+      .main-right .owl-dots .owl-dot:hover::before {
+        border: 1px solid #2582be !important;
+        border-radius: 50%; }
+      .main-right .owl-dots .owl-dot.active::after {
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%) scale(0.5);
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        background-color: #2582be !important; }
 
 main#main {
   top: 70px;
