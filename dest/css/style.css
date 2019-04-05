@@ -1,7 +1,8 @@
 body {
   margin: 0;
   background-color: #ffffff;
-  color: #333; }
+  color: #333;
+  font-size: 13px; }
 
 .flex {
   display: flex;
@@ -76,7 +77,7 @@ header#header {
   header#header .list-icons {
     margin-left: auto; }
     header#header .list-icons ul li {
-      margin-right: 30px; }
+      margin-right: 20px; }
       header#header .list-icons ul li a.Opacity {
         opacity: 0.5; }
         header#header .list-icons ul li a.Opacity:hover {
@@ -89,84 +90,93 @@ header#header {
     padding: 0px 9px;
     margin-right: 20px; }
     header#header .search input {
-      width: 250px;
-      height: 45px;
+      color: #888888;
+      font-size: 14px;
+      width: 240px;
+      height: 40px;
+      border: 1px solid #2f80ed;
       padding: 0 9px;
-      border: 1px solid #249ce2;
-      border-radius: 5px;
-      font-style: inherit; }
+      border-radius: 5px; }
     header#header .search .search-icon {
       content: '';
       position: absolute;
-      right: 0;
-      background-color: #249ce2;
+      right: -25px;
+      background: linear-gradient(to right, #2f82ed 0%, #00afef 100%);
       width: 40px;
-      height: 45px;
+      height: 40px;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px; }
       header#header .search .search-icon img {
-        margin: 10px 0 0 10px;
-        background-size: 50px; }
+        margin: 10px 0 0 10px; }
 
-.page-left {
+.main-left {
   padding: 0px 0;
   width: 72%; }
 
+.main-right {
+  width: 300px; }
+
 main#main {
+  top: 70px;
   position: relative; }
   main#main .banner {
     background-color: white;
-    padding: 15px; }
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative; }
     main#main .banner .banner-promotion {
       margin: auto;
-      display: flex;
       position: relative;
-      justify-content: center;
       background-color: white;
       margin-bottom: 15px;
       font-family: FontAwesome; }
+      main#main .banner .banner-promotion img {
+        width: 100%;
+        padding: 10px 40px; }
       main#main .banner .banner-promotion .close-banner {
         position: absolute;
-        top: 4px;
-        right: 200px;
+        top: 5px;
+        right: 10px;
         cursor: pointer;
-        z-index: 1; }
-  main#main .Sing-hover {
-    position: relative;
-    margin: 0px 0px 50px 0px; }
-    main#main .Sing-hover .hinhbu {
-      padding-bottom: 59px;
-      width: 100%; }
-      main#main .Sing-hover .hinhbu img {
-        height: 339px;
+        z-index: 2; }
+  main#main .main {
+    justify-content: space-between; }
+    main#main .main .Sing-hover {
+      position: relative;
+      margin: 0px 0px 50px 0px; }
+      main#main .main .Sing-hover .hinhbu {
+        padding-bottom: 59px;
         width: 100%; }
-    main#main .Sing-hover ul.products.flex {
-      position: absolute;
-      background-color: #333333;
-      padding: 10px;
-      bottom: -10px;
-      width: 100%; }
-      main#main .Sing-hover ul.products.flex li {
-        margin-right: 8px;
-        justify-content: space-between;
-        position: relative; }
-        main#main .Sing-hover ul.products.flex li img {
-          width: 175px;
-          height: 100%;
-          position: relative;
-          z-index: 2; }
-        main#main .Sing-hover ul.products.flex li::after {
-          position: absolute;
-          content: " ";
-          width: 95%;
-          height: 93%;
-          z-index: 3;
-          left: 0;
-          top: 0;
-          border: 4px solid red;
-          display: none; }
-        main#main .Sing-hover ul.products.flex li:hover::after {
-          display: block; }
+        main#main .main .Sing-hover .hinhbu img {
+          height: 339px;
+          width: 100%; }
+      main#main .main .Sing-hover ul.products.flex {
+        position: absolute;
+        background-color: #333333;
+        padding: 10px;
+        bottom: -10px;
+        width: 100%; }
+        main#main .main .Sing-hover ul.products.flex li {
+          margin-right: 8px;
+          justify-content: space-between;
+          position: relative; }
+          main#main .main .Sing-hover ul.products.flex li img {
+            width: 175px;
+            height: 100%;
+            position: relative;
+            z-index: 2; }
+          main#main .main .Sing-hover ul.products.flex li::after {
+            position: absolute;
+            content: " ";
+            width: 95%;
+            height: 93%;
+            z-index: 3;
+            left: 0;
+            top: 0;
+            border: 4px solid red;
+            display: none; }
+          main#main .main .Sing-hover ul.products.flex li:hover::after {
+            display: block; }
 
 img {
   max-width: 100%; }

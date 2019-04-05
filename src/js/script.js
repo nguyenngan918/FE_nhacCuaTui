@@ -21,4 +21,8 @@ $(document).ready(function (){
       $('.tab-content .tab').eq(index).addClass('active')
       $('.tab-content .tab').eq(index).show()
     });
+    $('.close-banner').click(function(e){
+      e.preventDefault();
+      $('.banner-promotion').hide();
+    })
 });
